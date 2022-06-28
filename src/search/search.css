@@ -1,0 +1,146 @@
+.section {
+  width: 60em;
+}
+.search {
+  width: 100%;
+  height: 100px;
+  background-color: #fafaf7;
+  display: flex;
+  align-items: center;
+}
+
+.search-section {
+  width: 40em;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+.search-section-container {
+  width: 100%;
+}
+.search-section-container-form input {
+  width: 100%;
+}
+.search-section-container-form__name {
+  border: none;
+  width: 100%;
+  font-size: 1.5em;
+  font-family: nunito;
+  letter-spacing: 1px;
+  color: #02111a;
+  background-color: transparent;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+#icon {
+  font-size: 1.5em;
+  color: #06283d;
+}
+#line {
+  border-bottom: 1px solid #06283d;
+  width: 40em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+}
+.search-section-container-form input:active {
+  border: none;
+}
+.search-dropdown-button {
+  background-color: #034659;
+  color: white;
+  padding: 16px;
+  font-size: 1.3em;
+  border: none;
+  font-family: nunito;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.icon {
+  font-size: 1.1em;
+  padding-left: 0.5em;
+}
+.search-dropdown {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.search-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.search-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.search-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.search-dropdown:hover .search-dropdown-content {
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  .section{
+    max-width: 30em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .search-section{
+    max-width: 30em;
+  }
+  .search {
+    display: inline;
+  }
+  .search-dropdown {
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+
+  }
+  #line {
+    max-width: 30em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .search-dropdown{
+    padding: 1em;
+  }
+  .search-section {
+    max-width: 20em;
+
+  }
+  #line {
+    max-width: 20em;
+
+  }
+}
+@media only screen and (max-width: 350px) {
+
+  .search-section {
+    margin-left: 1em;
+  }
+  #line {
+   margin-left: 1em;
+  }
+}

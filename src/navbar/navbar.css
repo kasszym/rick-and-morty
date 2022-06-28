@@ -1,0 +1,38 @@
+.navbar{
+    top: 0;
+    right: 0;
+    position: relative;
+    background-color: #fafaf7;
+    height: 30em;
+}
+.navbar__image{
+    max-width: 85em;
+    float:right;
+    background-color: #fafaf7;
+    z-index: 1;
+}
+.navbar__image img{
+    width: 100%;
+}
+@media only screen and (max-width: 1650px) {
+    .navbar__image img{
+        width: 70em;
+    }
+  }
+  @media only screen and (max-width: 1250px) {
+    .navbar__image img{
+        width:60em
+
+    }
+  }
+  @media only screen and (max-width:700px) {
+    .navbar__image img{
+        width:35em
+    }
+  }
+  @media only screen and (max-width:400px) {
+    .navbar__image img{
+        width:25em
+    }
+  }
+

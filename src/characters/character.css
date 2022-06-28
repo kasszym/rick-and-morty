@@ -1,0 +1,96 @@
+.characters-card{
+    margin-top: 8em;
+    margin-right: 10em;
+}
+
+.characters-card__content{
+    display: flex;
+    max-height: 40em;
+    max-width: 50em;
+}
+
+.characters-card__content--image{
+    padding: 0 2em 0 0;
+    margin-bottom: 0;
+    width: 25em;
+}
+.characters-card__content--image__logo{
+    border: 3px solid #06283d;
+    box-shadow: 5px 5px 5px grey;
+    object-fit: cover;
+    height: 25em;
+    width: 25em;
+    overflow: hidden;
+}
+.characters-card__content--image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.characters-card__content--image img:hover{
+    transform: scale(1.2); 
+}
+
+.pagination__card__content--info{
+   height: 30em;
+   align-items: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.characters-card__personal-data{
+    display: flex;
+    color: #06283d;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.characters-card__personal-data p{
+    margin: 0.3em;
+}
+#bold{
+    font-weight: 600;
+    color: #02111a
+}
+
+.characters-card__content--info{
+    margin-top: 0;
+
+}
+.characters-card__content--info p{
+    margin: 0.3em;
+}
+.characters-card__content--info__name{
+    font-size: 1.6em;
+    color:#06283d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+.characters-card__content--info__created{
+    text-align: center;
+    font-size: 1em;
+    color:#02111a;
+}
+@media only screen and (max-width:750px) {
+    .characters-card{
+        width: 25em;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .characters-card__content{
+        display: block;
+        width: 25em;
+    }
+  }
+  @media only screen and (max-width:350px) {
+    .characters-card__content--image__logo{
+        width:20em;
+        height: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }

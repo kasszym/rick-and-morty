@@ -1,0 +1,87 @@
+.pagination-container {
+  text-align: center;
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.pagination-navigation {
+  cursor: pointer;
+}
+.pagination-navigation li {
+  list-style: none;
+  padding: 5px;
+  font-size: 1.6em;
+  color: #02111a;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-navigation li:first-child,
+.pagination-navigation li:last-child {
+  padding: 5px;
+}
+.pagination-navigation a {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  /* text-align: center; */
+  justify-content: center;
+}
+.pagination-navigation ul {
+  display: flex;
+}
+.page-num-next {
+  font-size: 1.5em;
+  display: inline-block;
+}
+.active {
+  background-color: #02111a;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.page-num {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 750px) {
+ .pagination-navigation{
+  max-width: 40em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .pagination-navigation li {
+    font-size: 1.3em;
+  }
+  .pagination-navigation a{
+    width: 17px;
+    height: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  .pagination-navigation li {
+    padding: 3px;
+    font-size: 1.1em;
+  }
+  .pagination-navigation a{
+    width: 17px;
+    height: 17px;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+
+  .pagination-navigation li {
+    padding: 2px;
+    font-size: 1em;
+  }
+  .pagination-navigation a{
+    width: 15x;
+    height: 15px;
+  }
+
+}
